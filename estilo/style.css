@@ -1,3 +1,4 @@
+/* RESET E BASE */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'UnifrakturCook', cursive;
     background-color: #0d0d0d;
     background-image: url(../img/fundo-n-escura.webp);
     background-size: cover;
@@ -28,26 +29,59 @@ h2,
     text-shadow: 2px 2px 4px #000;
 }
 
+.container__home p {
+    text-shadow: 1px 1px 1px #000;
+    font-weight: 700;
+}
+
 .container {
     max-width: 960px;
     margin: 40px auto;
     padding: 40px 20px;
     background-color: #1a1a1a;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 0, 170, 0.1);
 }
 
 .galeria .container h2 {
-    color: #00ffff;
+    color: #ff00aa;
     font-size: 40px;
     padding: 20px;
     background-color: rgba(0, 0, 0, .3);
     border-radius: 5px;
-    animation: neonShadow 5s linear infinite;
+    animation: neonShadow 5s ease-in infinite;
+}
+
+.galeria h3 {
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.galeria ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 40px auto;
+    gap: 1em;
+    background-color: #ff00aa;
+    ;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.galeria li {
+    font-size: 30px;
+    border-bottom: 1px solid #fff;
+}
+
+.galeria li:hover {
+    text-shadow: 0px 0px 5px #fff;
+    transition: .5s;
 }
 
 .hero {
-    background: linear-gradient(to bottom, #0d0d0d 60%, transparent), url('https://source.unsplash.com/1600x900/?tattoo,studio') center/cover no-repeat;
+    position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -55,10 +89,11 @@ h2,
     text-align: center;
     justify-content: center;
     padding: 0 20px;
+    z-index: 1;
 }
 
 .logo {
-    width: 100px;
+    width: 180px;
     top: 20px;
     left: 20px;
     position: fixed;
@@ -66,10 +101,8 @@ h2,
 }
 
 .logo img {
-    border: 2px solid #00ffff;
-    background-color: rgba(0, 255, 255, 0.05);
     border-radius: 100%;
-    animation: box 5s linear infinite;
+    animation: box 5s ease-in infinite;
 }
 
 .logo img:hover {
@@ -84,9 +117,9 @@ h2,
 }
 
 .hero h1 {
-    font-size: 48px;
-    color: #00ffff;
-    animation: neonShadow 5s linear infinite;
+    font-size: 50px;
+    color: #ff00aa;
+    animation: neonShadow 5s ease-in infinite;
 }
 
 .hero p {
@@ -99,8 +132,8 @@ h2,
     display: inline-block;
     padding: 10px 20px;
     background: #1f1f1f;
-    color: #00ffff;
-    border: 1px solid #00ffff;
+    color: #ffffff;
+    border: 1px solid #ff00aa;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -109,9 +142,8 @@ h2,
 }
 
 .btn:hover {
-    background: #00ffff;
-    color: #000;
-    box-shadow: 0 0 10px #00ffff;
+    background: #ff00aa;
+    box-shadow: 0 0 10px #ff00aa;
     transition: .3s;
 }
 
@@ -129,15 +161,15 @@ section {
 .sobre h2 {
     padding: 20px;
     font-size: 40px;
-    color: #39ff14;
+    color: #ff00aa;
 }
 
 .sobre p {
     font-weight: 700;
     padding: 16px;
     border-radius: 5px;
-    background-color: rgba(0, 255, 255, 0.05);
-    color: #ccc;
+    background-color: rgba(255, 0, 170, 0.05);
+    color: #fce3f1;
     max-width: 800px;
     margin: auto;
 }
@@ -180,24 +212,54 @@ section {
     border-radius: 10px;
 }
 
+.pierc__modelos {
+    display: flex;
+}
+
+.card_container{
+    display: flex;
+    margin-top: 20px;
+    gap: .5em;
+}
+
+.card__ {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    padding: 6px;
+    width: 300px;
+    text-align: center;
+}
+
+.card__ h2 {
+    color: #e91e63;
+    margin-bottom: 15px;
+}
+
+.card__ p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
 .depoimentos {
     background: #111;
     padding: 60px 20px;
 }
 
 .depoimentos h2 {
-    color: #39ff14;
+    color: #ff00aa;
     font-size: 40px;
     padding: 20px;
     border-radius: 5px;
-    background-color: rgba(0, 255, 255, 0.05);
+    background-color: rgba(255, 0, 170, 0.05);
 }
 
 .depoimentos blockquote {
     margin: 30px auto;
     font-style: italic;
-    border-left: 4px solid #39ff14;
-    color: #ccc;
+    border-left: 4px solid #ff00aa;
+    color: #ffffff;
     padding-left: 20px;
     max-width: 700px;
     text-align: left;
@@ -218,45 +280,59 @@ section {
     width: 100%;
 }
 
-.sociais{
+.sociais {
     display: flex;
     gap: 1em;
     justify-content: center;
 }
 
-.sociais .insta, .sociais .fece{
+.sociais .insta,
+.sociais .fece {
     width: 40px;
     border-radius: 100%;
 }
 
-.sociais .insta:hover{
+.sociais .insta:hover {
     transform: translateY(-10px);
     transition: .5s;
     box-shadow: 0px 0px 10px #E1306C;
 }
 
-.sociais .fece:hover{
+.sociais .fece:hover {
     transform: translateY(-10px);
     transition: .5s;
     box-shadow: 0px 0px 10px #1877F2;
 }
 
 .btn-wp {
-    background-color: #00c853;
+    background-color: #ff00aa;
     color: #ffffff;
     font-weight: 700;
     text-decoration: none;
     padding: 10px 20px;
-    border: 1px solid #00c853;
+    border: 1px solid #ff00aa;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .btn-wp:hover {
-    background-color: #39ff14;
+    background-color: #ff00aa;
     color: #ffffff;
-    box-shadow: 0 0 10px #39ff14;
+    box-shadow: 0 0 10px #ff00aa;
     transition: .5s;
+}
+
+.maps a {
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+}
+
+.maps a:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+    text-shadow: 0px 0px 10px #ffffff;
 }
 
 footer {
@@ -297,45 +373,45 @@ footer {
 
 @keyframes neonShadow {
     0% {
-        text-shadow: 2px 2px 4px #ff0080;
+        text-shadow: 2px 2px 4px #e2e2e2;
     }
 
     25% {
-        text-shadow: 2px 2px 4px #00ffff;
+        text-shadow: 2px 2px 4px #ffb8f9;
     }
 
     50% {
-        text-shadow: 2px 2px 4px #39ff14;
+        text-shadow: 2px 2px 4px #ff87f5;
     }
 
     75% {
-        text-shadow: 2px 2px 4px #ffcc00;
+        text-shadow: 2px 2px 4px #ff41ef;
     }
 
     100% {
-        text-shadow: 2px 2px 4px #ff0080;
+        text-shadow: 2px 2px 4px #ffffff;
     }
 }
 
 @keyframes box {
     0% {
-        box-shadow: 0px 0px 10px #ff0080;
+        filter: drop-shadow(2px 2px 7px #e2e2e2);
     }
 
     25% {
-        box-shadow: 0px 0px 10px #00ffff;
+        filter: drop-shadow(2px 2px 7px #ffb8f9);
     }
 
     50% {
-        box-shadow: 0px 0px 10px #39ff14;
+        filter: drop-shadow(2px 2px 7px #ff86f5);
     }
 
     75% {
-        box-shadow: 0px 0px 10px #ffcc00;
+        filter: drop-shadow(2px 2px 7px #ff4df0);
     }
 
     100% {
-        box-shadow: 0px 0px 10px #ff0080;
+        filter: drop-shadow(2px 2px 7px #ffb8f9);
     }
 }
 
@@ -354,6 +430,10 @@ footer {
         font-size: 32px;
     }
 
+    .logo {
+        width: 130px;
+    }
+
     .btn {
         padding: 8px 16px;
         font-size: 16px;
@@ -364,11 +444,29 @@ footer {
         height: 140px;
     }
 
+    .galeria li {
+        font-size: 16px;
+    }
+
+    .card_container{
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 50px;
+    }
+
+    .card__ {
+        margin: 0 auto;
+    }
+
     .container,
     .sobre,
     .galeria,
     .depoimentos,
     .contato {
         padding: 40px 16px;
+    }
+
+    .container__home p {
+        font-size: 15px;
     }
 }
