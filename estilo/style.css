@@ -95,7 +95,7 @@ h2,
 .logo {
     width: 180px;
     top: 20px;
-    left: 20px;
+    left: auto;
     position: fixed;
     z-index: 1000;
 }
@@ -156,6 +156,7 @@ section {
     color: #e0e0e0;
     background-color: #1a1a1a;
     padding: 60px 20px;
+
 }
 
 .sobre h2 {
@@ -216,7 +217,7 @@ section {
     display: flex;
 }
 
-.card_container{
+.card_container {
     display: flex;
     margin-top: 20px;
     gap: .5em;
@@ -432,6 +433,7 @@ footer {
 
     .logo {
         width: 130px;
+        top: 40px;
     }
 
     .btn {
@@ -448,7 +450,7 @@ footer {
         font-size: 16px;
     }
 
-    .card_container{
+    .card_container {
         flex-direction: column;
         gap: 1em;
         margin-top: 50px;
