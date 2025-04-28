@@ -94,25 +94,6 @@ h2,
     border-radius: 10px;
 }
 
-/* LOGO */
-.logo {
-    width: 180px;
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    z-index: 1000;
-}
-
-.logo img {
-    border-radius: 100%;
-    animation: box 5s ease-in infinite;
-}
-
-.logo img:hover {
-    transform: rotateY(-45deg);
-    transition: 1s;
-}
-
 /* BOTÕES */
 .btn,
 .btn-wp {
@@ -463,12 +444,6 @@ footer {
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 32px;
-    }
-
-    .logo {
-        width: 130px;
-        top: 20px;
-        left: auto;
     }
 
     .btn {
