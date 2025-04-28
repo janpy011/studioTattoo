@@ -5,10 +5,13 @@ function animarAoScroll() {
     elementos.forEach(el => {
         const topoElemento = el.getBoundingClientRect().top;
 
-        if (topoElemento < alturaTela) {
-            const delay = el.getAttribute("data-delay") || "0s";
-            el.style.setProperty("--delay", delay);
+        const delay = el.getAttribute("data-delay") || "0s";
+        el.style.setProperty("--delay", delay);
+
+        if (el.classList.contains('hero') || (topoElemento < alturaTela && topoElemento > 0)) {
             el.classList.add("ativo");
+        } else {
+            el.classList.remove("ativo");
         }
     });
 }
