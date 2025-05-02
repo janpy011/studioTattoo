@@ -375,17 +375,6 @@ footer {
     text-align: center;
 }
 
-footer a {
-    color: #ffffff;
-    animation: rainbowShadow 3s ease-in infinite;
-    display: inline-block;
-}
-
-footer a:hover {
-    transform: translateY(-6px);
-    transition: .4s;
-}
-
 /* ANIMAÇÕES SCROLL */
 [data-animar] {
     opacity: 0;
@@ -413,36 +402,6 @@ footer a:hover {
 
 [data-animar="b"] {
     transform: translateY(-50px);
-}
-
-@keyframes rainbowShadow {
-    0% {
-        text-shadow: 0 0 10px red;
-    }
-
-    16% {
-        text-shadow: 0 0 10px orange;
-    }
-
-    32% {
-        text-shadow: 0 0 10px yellow;
-    }
-
-    48% {
-        text-shadow: 0 0 10px green;
-    }
-
-    64% {
-        text-shadow: 0 0 10px blue;
-    }
-
-    80% {
-        text-shadow: 0 0 10px indigo;
-    }
-
-    100% {
-        text-shadow: 0 0 10px violet;
-    }
 }
 
 /* KEYFRAMES */
