@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-image:url(../img/fundo-n-escura.jpg);
+    background-image: url(../img/fundo-n-escura.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: #e0e0e0;
@@ -71,7 +71,7 @@ h2,
     animation: neonShadow 5s ease-in infinite;
 }
 
-.horarios{
+.horarios {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -83,12 +83,12 @@ h2,
 }
 
 .horarios .dia,
-.horarios .horas{
+.horarios .horas {
     color: #ffffff;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-.horarios .horas{
+.horarios .horas {
     padding: 5px;
 }
 
@@ -273,7 +273,7 @@ section {
     margin-bottom: 15px;
 }
 
-.card__ small{
+.card__ small {
     font-size: 20px;
     font-weight: 700;
     padding: 10px;
@@ -321,7 +321,7 @@ section {
     align-items: center;
 }
 
-.contato span{
+.contato span {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     padding: 5px;
@@ -368,11 +368,22 @@ section {
 
 /* FOOTER */
 footer {
-    text-align: center;
     padding: 30px;
     color: #999;
     background-color: #0d0d0d;
     font-size: 14px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+    animation: rainbowShadow 3s ease-in infinite;
+    display: inline-block;
+}
+
+footer a:hover {
+    transform: translateY(-6px);
+    transition: .4s;
 }
 
 /* ANIMAÇÕES SCROLL */
@@ -402,6 +413,36 @@ footer {
 
 [data-animar="b"] {
     transform: translateY(-50px);
+}
+
+@keyframes rainbowShadow {
+    0% {
+        text-shadow: 0 0 10px red;
+    }
+
+    16% {
+        text-shadow: 0 0 10px orange;
+    }
+
+    32% {
+        text-shadow: 0 0 10px yellow;
+    }
+
+    48% {
+        text-shadow: 0 0 10px green;
+    }
+
+    64% {
+        text-shadow: 0 0 10px blue;
+    }
+
+    80% {
+        text-shadow: 0 0 10px indigo;
+    }
+
+    100% {
+        text-shadow: 0 0 10px violet;
+    }
 }
 
 /* KEYFRAMES */
